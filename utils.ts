@@ -14,13 +14,11 @@ async function doesDirExist(dir: string) {
 ;(async function createDirIfNotExist(dir: string) {
   try {
     if (await doesDirExist(dir)) return
-  } catch (err: any) {
-    console.log(err)
-    if (err.code === 'ENOENT') {
+    else {
       await fs.mkdir(dir, { recursive: true })
-    } else {
-      console.error(err)
     }
+  } catch (err: any) {
+    console.error(err)
   }
 })(outputDir)
 
