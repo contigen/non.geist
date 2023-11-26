@@ -10,10 +10,12 @@ const monoDir = join(import.meta.dir, FONTS_DIR, MONO_STATIC_DIR)
 
 processFiles(sansDir)
 processFiles(monoDir)
-if (process.env.NODE_ENV) {
-  chokidar
-    .watch([sansDir, monoDir], { ignoreInitial: true })
-    .on(`add`, (evt, path) => {
-      path?.isFile() && processSingleFile(evt)
-    })
+if (process.env.NODE_ENV === `development`) {
+  import(`chokidar`).then((chokidar) => {
+    chokidar
+      .watch([sansDir, monoDir], { ignoreInitial: true })
+      .on(`add`, (evt, path) => {
+        path?.isFile() && processSingleFile(evt)
+      })
+  })
 }
