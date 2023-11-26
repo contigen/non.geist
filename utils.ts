@@ -1,3 +1,4 @@
+import { findFontWeight } from './fonts/font-weight'
 import { join, extname, basename } from 'path'
 import fs from 'fs/promises'
 
@@ -45,11 +46,15 @@ export async function dirContainsCSSFilesWithFontFace(dir: string) {
 
 function generateFontFaceRule(fontFileName: string, fontFilePath: string) {
   const fontName = fontFileName.replace(/\..*$/, '')
+  const fontWeight = findFontWeight(fontName)
   return `@font-face {
       font-family: '${fontName}';
       src: local('${fontName}') url('${fontFilePath}') format('${extname(
-    fontFilePath
-  ).slice(1)}');
+        fontFilePath
+      ).slice(1)}');
+      font-weight: '${fontWeight}';
+      font-diplay: 'swap';
+      font-synthesis: 'none';
     }`
 }
 const write = async (fileName: string, content: string) =>
