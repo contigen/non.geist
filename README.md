@@ -1,4 +1,18 @@
-# @non/geist
+# non.geist
+
+A package to use Vercelʼs [Geist font](https://vercel.com/font)－ Sans & Mono, for non-Next.js projects.
+
+## Motivation
+
+I tried to use [geist-font](https://www.npmjs.com/package/geist) in a React project, it errored out.
+
+## Font Features
+
+## License
+
+[License](https://github.com/vercel/geist-font/blob/main/LICENSE.TXT)
+
+---
 
 To install dependencies:
 
