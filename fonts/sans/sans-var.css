@@ -1,4 +1,4 @@
 @font-face {
-    font-family: Geist;
-    src: url('./GeistVF.woff2');
+    font-family: 'Geist Variable';
+    src: local('Geist Variable'), url('./GeistVariableVF.woff2') format('woff2');
 }
