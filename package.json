@@ -1,6 +1,6 @@
 {
   "name": "non.geist",
-  "description": "Vercel's Geist font for non-Next.js technologies",
+  "description": "Vercel's Geist font for non-Next.js projects",
   "keywords": [
     "fonts",
     "web fonts",
@@ -9,6 +9,7 @@
     "Geist Sans",
     "Geist Mono"
   ],
+  "main": "index.css",
   "author": "contigen",
   "license": "MIT",
   "repository": {
@@ -16,8 +17,11 @@
     "url": "https://github.com/contigen/non.geist"
   },
   "module": "index.ts",
+  "prettier:check": "prettier --check --ignore-path .gitignore .",
+  "prettier:format": "prettier --write --ignore-path .gitignore .",
   "devDependencies": {
-    "bun-types": "latest"
+    "bun-types": "latest",
+    "prettier": "^3.1.0"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
