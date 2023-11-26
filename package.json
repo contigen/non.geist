@@ -1,11 +1,28 @@
 {
-  "name": "@non.geist",
+  "name": "non.geist",
+  "description": "Vercel's Geist font for non-Next.js technologies",
+  "keywords": [
+    "fonts",
+    "web fonts",
+    "vercel",
+    "Geist",
+    "Geist Sans",
+    "Geist Mono"
+  ],
+  "author": "contigen",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/contigen/non.geist"
+  },
   "module": "index.ts",
-  "type": "module",
   "devDependencies": {
     "bun-types": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "chokidar": "^3.5.3"
   }
 }
