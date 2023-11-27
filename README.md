@@ -2,9 +2,9 @@
 
 A package to use Vercelʼs [Geist font](https://vercel.com/font)－ Sans & Mono, for non-Next.js projects.
 
-## Motivation
+## The Why
 
-I tried to use [geist-font](https://www.npmjs.com/package/geist) in a React project, it errored out.
+I tried to use [geist-font](https://www.npmjs.com/package/geist) in a React project, it errored out. I like the flexibility a package offers － not having to manage assets (or dependencies); I take it a lot of devs prefer this, maybe. Now, itʼs not much to `@font-face` a font (or typeface), itʼs even easier with [variable fonts](https://fonts.google.com/knowledge/introducing_type/introducing_variable_fonts). More importantly, itʼs a learning opportunity for me, like every other project.
 
 ## Font Features
 
@@ -13,6 +13,8 @@ I tried to use [geist-font](https://www.npmjs.com/package/geist) in a React proj
 [License](https://github.com/vercel/geist-font/blob/main/LICENSE.TXT)
 
 ---
+
+### Development
 
 To install dependencies:
 
