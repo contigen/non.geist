@@ -1,6 +1,6 @@
 # non.geist
 
-A package to use Vercelʼs [Geist font](https://vercel.com/font)－ Sans & Mono, for non-Next.js projects.
+A package to use Vercelʼs typefaces, [Geist](https://vercel.com/font)－ Sans & Mono, for non-Next.js projects.
 
 ## The Why
 
