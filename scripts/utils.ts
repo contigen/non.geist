@@ -1,8 +1,8 @@
-import { findFontWeight } from '../fonts/font-weight'
+import { findFontWeight } from './font-weight'
 import { join, extname, basename } from 'path'
 import fs from 'fs/promises'
 
-const OUTPUT_DIR = `typefaces`
+const OUTPUT_DIR = `font-faces`
 
 async function doesDirExist(dir: string) {
   try {

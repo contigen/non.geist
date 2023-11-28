@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'GeistMono-Black';
+  src: local('GeistMono-Black'), url('../fonts/mono/static/GeistMono-Black.woff2') format('woff2');
+  font-weight: '800';
+  font-diplay: 'swap';
+  font-synthesis: 'none';
+}
