@@ -2,7 +2,7 @@ import { findFontWeight } from '../fonts/font-weight'
 import { join, extname, basename } from 'path'
 import fs from 'fs/promises'
 
-const OUTPUT_DIR = `static`
+const OUTPUT_DIR = `out/static`
 
 async function doesDirExist(dir: string) {
   try {
@@ -49,7 +49,7 @@ function generateFontFaceRule(fontFileName: string, fontFilePath: string) {
   const fontWeight = findFontWeight(fontName)
   return `@font-face {
       font-family: '${fontName}';
-      src: local('${fontName}') url('../${fontFilePath}') format('${extname(
+      src: local('${fontName}'), url('../../${fontFilePath}') format('${extname(
         fontFilePath
       ).slice(1)}');
       font-weight: '${fontWeight}';
