@@ -2,26 +2,26 @@ import { findFontWeight } from './fonts/font-weight'
 import { join, extname, basename } from 'path'
 import fs from 'fs/promises'
 
-const outputDir = join(import.meta.dir, `css`)
+const OUTPUT_DIR = `static`
 
 async function doesDirExist(dir: string) {
   try {
     await fs.access(dir)
     return true
   } catch (err) {
-    return err
+    return false
   }
 }
-;(async function createDirIfNotExist(dir: string) {
+await (async function createDirIfNotExist(dir: string) {
   try {
     if (await doesDirExist(dir)) return
     else {
-      await fs.mkdir(dir, { recursive: true })
+      await fs.mkdir(dir)
     }
   } catch (err: any) {
     console.error(err)
   }
-})(outputDir)
+})(OUTPUT_DIR)
 
 export async function dirContainsCSSFilesWithFontFace(dir: string) {
   if (!(await doesDirExist(dir))) {
@@ -49,7 +49,7 @@ function generateFontFaceRule(fontFileName: string, fontFilePath: string) {
   const fontWeight = findFontWeight(fontName)
   return `@font-face {
       font-family: '${fontName}';
-      src: local('${fontName}') url('${fontFilePath}') format('${extname(
+      src: local('${fontName}') url('../${fontFilePath}') format('${extname(
         fontFilePath
       ).slice(1)}');
       font-weight: '${fontWeight}';
@@ -57,8 +57,6 @@ function generateFontFaceRule(fontFileName: string, fontFilePath: string) {
       font-synthesis: 'none';
     }`
 }
-const write = async (fileName: string, content: string) =>
-  await Bun.write(`${outputDir}/${fileName}.css`, content)
 
 export async function processFiles(dir: string) {
   if (await dirContainsCSSFilesWithFontFace(dir)) return
@@ -67,8 +65,10 @@ export async function processFiles(dir: string) {
     for (const file of files) {
       if (file.isFile()) {
         const fontFilePath = join(dir, file.name)
+        const fileNameWithCSSExt = basename(fontFilePath, '.woff2') + '.css'
+        const fileNameWithCSSpath = join(OUTPUT_DIR, fileNameWithCSSExt)
         const cssRule = generateFontFaceRule(file.name, fontFilePath)
-        write(file.name, cssRule)
+        Bun.write(fileNameWithCSSpath, cssRule)
       }
     }
   } catch (err) {
@@ -77,9 +77,12 @@ export async function processFiles(dir: string) {
 }
 export async function processSingleFile(dir: string) {
   const fileName = basename(dir)
+  const fileNameWithCSSExt = basename(dir, '.woff2') + '.css'
+
   try {
     const cssRule = generateFontFaceRule(fileName, dir)
-    write(fileName, cssRule)
+    const fileNameWithCSSpath = join(OUTPUT_DIR, fileNameWithCSSExt)
+    Bun.write(fileNameWithCSSpath, cssRule)
   } catch (err) {
     console.error(`Error processing file ${fileName}:`, err)
   }
