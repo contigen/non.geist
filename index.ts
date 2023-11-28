@@ -1,6 +1,5 @@
-import fs from 'fs/promises'
 import { join } from 'path'
-import { processFiles, processSingleFile } from './utils'
+import { processFiles, processSingleFile } from './scripts/utils'
 
 const FONTS_DIR = `fonts`
 const SANS_STATIC_DIR = `/sans/static`

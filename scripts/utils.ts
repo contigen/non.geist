@@ -1,4 +1,4 @@
-import { findFontWeight } from './fonts/font-weight'
+import { findFontWeight } from '../fonts/font-weight'
 import { join, extname, basename } from 'path'
 import fs from 'fs/promises'
 
