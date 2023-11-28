@@ -49,7 +49,7 @@ function generateFontFaceRule(fontFileName: string, fontFilePath: string) {
   const fontWeight = findFontWeight(fontName)
   return `@font-face {
       font-family: '${fontName}';
-      src: local('${fontName}'), url('../../${fontFilePath}') format('${extname(
+      src: local('${fontName}'), url('../${fontFilePath}') format('${extname(
         fontFilePath
       ).slice(1)}');
       font-weight: '${fontWeight}';
