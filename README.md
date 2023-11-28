@@ -74,7 +74,7 @@ import 'non.geis/font-faces/GeistMono-UltraBlack.css'
 import 'non.geis/font-faces/Geist-MonoUltraLight.css'
 ```
 
-`font family` values for individual weights:
+`font-family` values for individual weights:
 
 ```css
 @import url('non.geis/font-faces/Geist-Bold.css');
@@ -86,7 +86,7 @@ font-family: 'Geist-Bold';
 
 The `@font-face` `src` property finds a local version of the typefaces first, so no extra files are imported for users who have the typefaces installed.
 
-To explore the typeface stylistic sets, use CSS's `font-feature-settings` property.
+To explore the typefaces stylistic sets, use CSS's `font-feature-settings` property.
 
 ## License
 
