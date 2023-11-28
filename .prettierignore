@@ -1,5 +1,3 @@
 .gitignore
-lefthook.yml
 bun.lockb
-fonts/*
-!fonts/font-weight.ts
+fonts
