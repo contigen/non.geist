@@ -1,4 +1,3 @@
-# during  development
-static
-index.ts
-scripts
+*
+!files
+!font-faces
