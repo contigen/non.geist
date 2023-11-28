@@ -1,0 +1,7 @@
+@font-face {
+      font-family: 'Geist-Black';
+      src: local('Geist-Black') url('../fonts/sans/static/Geist-Black.woff2') format('woff2');
+      font-weight: '800';
+      font-diplay: 'swap';
+      font-synthesis: 'none';
+    }

@@ -1,0 +1,7 @@
+@font-face {
+      font-family: 'GeistMono-SemiBold';
+      src: local('GeistMono-SemiBold') url('../fonts/mono/static/GeistMono-SemiBold.woff2') format('woff2');
+      font-weight: '600';
+      font-diplay: 'swap';
+      font-synthesis: 'none';
+    }
