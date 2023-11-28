@@ -2,7 +2,7 @@ import { findFontWeight } from '../fonts/font-weight'
 import { join, extname, basename } from 'path'
 import fs from 'fs/promises'
 
-const OUTPUT_DIR = `out/static`
+const OUTPUT_DIR = `typefaces`
 
 async function doesDirExist(dir: string) {
   try {
