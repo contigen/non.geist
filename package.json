@@ -1,12 +1,17 @@
 {
   "name": "non.geist",
   "author": "contigen",
+  "private": "true",
   "repository": {
     "type": "git",
     "url": "https://github.com/contigen/non.geist"
   },
   "main": "index.css",
   "module": "index.ts",
+  "scripts": {
+    "generate": "bun index.ts",
+    "build": "bun scripts/build.ts"
+  },
   "devDependencies": {
     "bun-types": "latest",
     "chokidar": "^3.5.3",
@@ -25,6 +30,7 @@
     "Geist Mono"
   ],
   "license": "MIT",
+  "bugs": "https://github.com/contigen/non.geist/issues",
   "prettier:check": "prettier --check --ignore-path .gitignore .",
   "prettier:format": "prettier --write --ignore-path .gitignore ."
 }
