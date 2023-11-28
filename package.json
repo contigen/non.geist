@@ -6,11 +6,9 @@
     "type": "git",
     "url": "https://github.com/contigen/non.geist"
   },
-  "main": "index.css",
-  "module": "index.ts",
+  "main": "index.ts",
   "scripts": {
-    "generate": "bun index.ts",
-    "build": "bun scripts/build.ts"
+    "generate": "bun scripts/index.ts"
   },
   "devDependencies": {
     "bun-types": "latest",
@@ -30,7 +28,5 @@
     "Geist Mono"
   ],
   "license": "MIT",
-  "bugs": "https://github.com/contigen/non.geist/issues",
-  "prettier:check": "prettier --check --ignore-path .gitignore .",
-  "prettier:format": "prettier --write --ignore-path .gitignore ."
+  "bugs": "https://github.com/contigen/non.geist/issues"
 }
