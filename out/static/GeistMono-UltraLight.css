@@ -1,6 +1,6 @@
 @font-face {
       font-family: 'GeistMono-UltraLight';
-      src: local('GeistMono-UltraLight') url('../fonts/mono/static/GeistMono-UltraLight.woff2') format('woff2');
+      src: local('GeistMono-UltraLight'), url('../../fonts/mono/static/GeistMono-UltraLight.woff2') format('woff2');
       font-weight: '200';
       font-diplay: 'swap';
       font-synthesis: 'none';
