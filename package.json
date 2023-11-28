@@ -1,12 +1,16 @@
 {
   "name": "non.geist",
   "author": "contigen",
-  "private": "true",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/contigen/non.geist"
+    "url": "git+https://github.com/contigen/non.geist.git"
   },
-  "main": "index.ts",
+  "main": "font-faces/index.css",
+  "files": [
+    "font-faces",
+    "fonts"
+  ],
   "scripts": {
     "generate": "bun scripts/index.ts"
   },
