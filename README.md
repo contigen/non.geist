@@ -4,7 +4,7 @@ A package to use Vercelʼs typefaces, [Geist](https://vercel.com/font)－ Sans &
 
 ## The Why
 
-I tried to use [geist-font](https://www.npmjs.com/package/geist) in a React project, it errored out. I like the flexibility a package offers － not having to manage assets (or dependencies); I take it a lot of devs prefer this, maybe.<br/>Now, itʼs not even a hassle to `@font-face` a font (or typeface), itʼs even easier with [variable fonts](https://fonts.google.com/knowledge/introducing_type/introducing_variable_fonts). Regardless, itʼs a solid nice-to-have.
+I tried to use [geist](https://www.npmjs.com/package/geist) in a React project, it errored out. I like the flexibility a package offers － not having to manage assets (or dependencies); I take it a lot of devs prefer this, maybe.<br/>Now, itʼs not even a hassle to `@font-face` a font (or typeface), itʼs even easier with [variable fonts](https://fonts.google.com/knowledge/introducing_type/introducing_variable_fonts). Regardless, itʼs a solid nice-to-have.
 
 ## Installation
 
