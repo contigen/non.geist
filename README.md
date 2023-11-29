@@ -9,19 +9,19 @@ I tried to use [geist](https://www.npmjs.com/package/geist) in a React project, 
 ## Installation
 
 ```bash
-npm i non.geis
+npm i non.geist
 ```
 
 ```bash
-yarn add non.geis
+yarn add non.geist
 ```
 
 ```bash
-pnpm i non.geis
+pnpm i non.geist
 ```
 
 ```bash
-bun install non.geis
+bun add non.geist
 ```
 
 ## Usage
@@ -31,13 +31,13 @@ The default import provides **variable fonts**.
 In your entry .js(x) or .ts(x) file, you can import like so:
 
 ```js
-import 'non.geis'
+import 'non.geist'
 ```
 
 or do it in CSS directly
 
 ```css
-@import url('non.geis');
+@import url('non.geist');
 
 body {
   font-family: 'Geist Variable';
@@ -49,37 +49,41 @@ font-family: 'Geist Mono Variable';
 Variable fonts all the way, but if you need Geist sans individual weights:
 
 ```bash
-import 'non.geis/font-faces/Geist-Black.css'
-import 'non.geis/font-faces/Geist-Bold.css'
-import 'non.geis/font-faces/Geist-Light.css'
-import 'non.geis/font-faces/Geist-Medium.css'
-import 'non.geis/font-faces/Geist-Regular.css'
-import 'non.geis/font-faces/Geist-SemiBold.css'
-import 'non.geis/font-faces/Geist-Thin.css'
-import 'non.geis/font-faces/Geist-UltraBlack.css'
-import 'non.geis/font-faces/Geist-UltraLight.css'
+import 'non.geist/font-faces/Geist-Black.css'
+import 'non.geist/font-faces/Geist-Bold.css'
+import 'non.geist/font-faces/Geist-Light.css'
+import 'non.geist/font-faces/Geist-Medium.css'
+import 'non.geist/font-faces/Geist-Regular.css'
+import 'non.geist/font-faces/Geist-SemiBold.css'
+import 'non.geist/font-faces/Geist-Thin.css'
+import 'non.geist/font-faces/Geist-UltraBlack.css'
+import 'non.geist/font-faces/Geist-UltraLight.css'
 ```
 
 For Geist Mono:
 
 ```bash
-import 'non.geis/font-faces/GeistMono-Black.css'
-import 'non.geis/font-faces/GeistMono-Bold.css'
-import 'non.geis/font-faces/GeistMono-Light.css'
-import 'non.geis/font-faces/GeistMono-Medium.css'
-import 'non.geis/font-faces/GeistMono-Regular.css'
-import 'non.geis/font-faces/GeistMono-SemiBold.css'
-import 'non.geis/font-faces/GeistMono-Thin.css'
-import 'non.geis/font-faces/GeistMono-UltraBlack.css'
-import 'non.geis/font-faces/Geist-MonoUltraLight.css'
+import 'non.geist/font-faces/GeistMono-Black.css'
+import 'non.geist/font-faces/GeistMono-Bold.css'
+import 'non.geist/font-faces/GeistMono-Light.css'
+import 'non.geist/font-faces/GeistMono-Medium.css'
+import 'non.geist/font-faces/GeistMono-Regular.css'
+import 'non.geist/font-faces/GeistMono-SemiBold.css'
+import 'non.geist/font-faces/GeistMono-Thin.css'
+import 'non.geist/font-faces/GeistMono-UltraBlack.css'
+import 'non.geist/font-faces/Geist-MonoUltraLight.css'
 ```
 
 `font-family` values for individual weights:
 
 ```css
-@import url('non.geis/font-faces/Geist-Bold.css');
+@import url('non.geist/font-faces/Geist-Bold.css');
 
 font-family: 'Geist-Bold';
+/* Geist Mono */
+@import url('non.geist/font-faces/GeistMono-Bold.css');
+
+font-family: 'GeistMono-Bold';
 ```
 
 ## Miscellaneous
