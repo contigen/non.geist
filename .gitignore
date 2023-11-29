@@ -1,1 +1,3 @@
 node_modules
+# Created after running `npm publish` not used in dev
+package-lock.json
