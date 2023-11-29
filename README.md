@@ -90,6 +90,13 @@ font-family: 'GeistMono-Bold';
 
 The `@font-face` `src` property finds a local version of the typefaces first, so no extra files are imported for users who have the typefaces installed.
 
+Additional `@font-face` rules:
+
+```css
+font-display: swap;
+font-synthesis: none;
+```
+
 To explore the typefaces stylistic sets, use CSS's `font-feature-settings` property.
 
 ## License
@@ -118,3 +125,7 @@ bun run index.ts
 ```
 
 This project was created using `bun init` in bun v1.0.3. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+
+```
+
+```
