@@ -17,10 +17,8 @@
   "devDependencies": {
     "bun-types": "latest",
     "chokidar": "^3.5.3",
-    "prettier": "^3.1.0"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
+    "prettier": "^3.1.0",
+    "typescript": "^5.3.2"
   },
   "description": "Vercel's Geist font for non-Next.js projects",
   "keywords": [
