@@ -1,4 +1,4 @@
-# non.geist
+# [non.geist](https://www.npmjs.com/package/non.geist)
 
 A package to use Vercelʼs typefaces, [Geist](https://vercel.com/font)－ Sans & Mono, for non-Next.js projects.
 
