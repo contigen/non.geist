@@ -34,6 +34,14 @@ In your entry .js(x) or .ts(x) file, you can import like so:
 import 'non.geist'
 ```
 
+then,
+
+```css
+body {
+  font-family: 'Geist Variable';
+}
+```
+
 or do it in CSS directly
 
 ```css
