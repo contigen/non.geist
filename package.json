@@ -6,11 +6,16 @@
     "type": "git",
     "url": "git+https://github.com/contigen/non.geist.git"
   },
-  "main": "font-faces/index.css",
+  "main": "font-faces/sans-var.css",
   "files": [
     "font-faces",
     "fonts"
   ],
+  "exports": {
+    ".": "./font-faces/sans-var.css",
+    "./mono": "./font-faces/mono-var.css",
+    "./font-faces/": "./font-faces/"
+  },
   "scripts": {
     "generate": "bun scripts/index.ts"
   },
