@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Geist-UltraLight';
-  src: local('Geist-UltraLight'), url('../fonts/sans/static/Geist-UltraLight.woff2') format('woff2');
+  src: url('../fonts/sans/static/Geist-UltraLight.woff2') format('woff2');
   font-weight: '200';
   font-diplay: 'swap';
   font-synthesis: 'none';
