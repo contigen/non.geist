@@ -32,6 +32,9 @@ In your entry .js(x) or .ts(x) file, you can import like so:
 
 ```js
 import 'non.geist'
+
+// For Geist Mono
+import 'non.geist/mono'
 ```
 
 then,
@@ -39,6 +42,9 @@ then,
 ```css
 body {
   font-family: 'Geist Variable';
+
+  /* For Geist Mono */
+  font-family: 'Geist Mono Variable';
 }
 ```
 
@@ -51,6 +57,8 @@ body {
   font-family: 'Geist Variable';
 }
 /* For Geist Mono */
+
+@import url('non.geist/mono');
 font-family: 'Geist Mono Variable';
 ```
 
@@ -95,8 +103,6 @@ font-family: 'GeistMono-Bold';
 ```
 
 ## Miscellaneous
-
-The `@font-face` `src` property finds a local version of the typefaces first, so no extra files are imported for users who have the typefaces installed.
 
 Additional `@font-face` rules:
 
