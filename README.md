@@ -1,5 +1,7 @@
 # [non.geist](https://www.npmjs.com/package/non.geist)
 
+![Word cloud forming the text 'non-geist' in ASCII with a blue gradient effect ](./images/1.png)
+
 A package to use Vercelʼs typefaces, [Geist](https://vercel.com/font)－ Sans & Mono (**v 1.3**), for non-Next.js projects.
 
 ## The Why
@@ -140,6 +142,4 @@ bun run index.ts
 
 This project was created using `bun init` in bun v1.0.3. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
 
-```
-
-```
+![Word cloud forming the text 'non-geist' in ASCII with a red-blue gradient effect ](./images/2.png)
