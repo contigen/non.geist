@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Geist-LightItalic';
-  src: local('Geist-LightItalic'), url('../fonts/sans/static/Geist-LightItalic.woff2') format('woff2');
+  src: url('../fonts/sans/static/Geist-LightItalic.woff2') format('woff2');
   font-weight: '300';
   font-style: 'italic';
   font-display: 'swap';

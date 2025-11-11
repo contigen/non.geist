@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'GeistMono-Light';
-  src: local('GeistMono-Light'), url('../fonts/mono/static/GeistMono-Light.woff2') format('woff2');
+  src: url('../fonts/mono/static/GeistMono-Light.woff2') format('woff2');
   font-weight: '300';
   font-style: 'normal';
   font-display: 'swap';

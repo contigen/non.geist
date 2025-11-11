@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Geist-Thin';
-  src: local('Geist-Thin'), url('../fonts/sans/static/Geist-Thin.woff2') format('woff2');
+  src: url('../fonts/sans/static/Geist-Thin.woff2') format('woff2');
   font-weight: '100';
   font-style: 'normal';
   font-display: 'swap';

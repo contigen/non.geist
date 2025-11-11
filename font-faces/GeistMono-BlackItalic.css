@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'GeistMono-BlackItalic';
-  src: local('GeistMono-BlackItalic'), url('../fonts/mono/static/GeistMono-BlackItalic.woff2') format('woff2');
+  src: url('../fonts/mono/static/GeistMono-BlackItalic.woff2') format('woff2');
   font-weight: '900';
   font-style: 'italic';
   font-display: 'swap';

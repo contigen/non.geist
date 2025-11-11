@@ -55,7 +55,7 @@ function generateFontFaceRule(fontFileName: string, fontFilePath: string) {
   // The format for the @font-face block should be kept as is, do not change indentation or spacing
   return `@font-face {
   font-family: '${fontName}';
-  src: local('${fontName}'), url('../${normalizedFontPath}') format('${extname(
+  src: url('../${normalizedFontPath}') format('${extname(
     fontFilePath
   ).slice(1)}');
   font-weight: '${fontWeight}';
