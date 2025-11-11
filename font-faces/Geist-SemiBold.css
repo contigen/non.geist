@@ -1,7 +1,8 @@
 @font-face {
   font-family: 'Geist-SemiBold';
-  src: url('../fonts/sans/static/Geist-SemiBold.woff2') format('woff2');
+  src: local('Geist-SemiBold'), url('../fonts/sans/static/Geist-SemiBold.woff2') format('woff2');
   font-weight: '600';
-  font-diplay: 'swap';
+  font-style: 'normal';
+  font-display: 'swap';
   font-synthesis: 'none';
 }

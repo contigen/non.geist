@@ -1,7 +1,8 @@
 @font-face {
   font-family: 'GeistMono-Bold';
-  src: url('../fonts/mono/static/GeistMono-Bold.woff2') format('woff2');
+  src: local('GeistMono-Bold'), url('../fonts/mono/static/GeistMono-Bold.woff2') format('woff2');
   font-weight: '700';
-  font-diplay: 'swap';
+  font-style: 'normal';
+  font-display: 'swap';
   font-synthesis: 'none';
 }

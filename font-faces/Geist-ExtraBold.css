@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Geist-ExtraBold';
+  src: local('Geist-ExtraBold'), url('../fonts/sans/static/Geist-ExtraBold.woff2') format('woff2');
+  font-weight: '800';
+  font-style: 'normal';
+  font-display: 'swap';
+  font-synthesis: 'none';
+}

@@ -1,7 +1,8 @@
 @font-face {
   font-family: 'Geist-Bold';
-  src: url('../fonts/sans/static/Geist-Bold.woff2') format('woff2');
+  src: local('Geist-Bold'), url('../fonts/sans/static/Geist-Bold.woff2') format('woff2');
   font-weight: '700';
-  font-diplay: 'swap';
+  font-style: 'normal';
+  font-display: 'swap';
   font-synthesis: 'none';
 }

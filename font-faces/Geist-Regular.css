@@ -1,7 +1,8 @@
 @font-face {
   font-family: 'Geist-Regular';
-  src: url('../fonts/sans/static/Geist-Regular.woff2') format('woff2');
+  src: local('Geist-Regular'), url('../fonts/sans/static/Geist-Regular.woff2') format('woff2');
   font-weight: '400';
-  font-diplay: 'swap';
+  font-style: 'normal';
+  font-display: 'swap';
   font-synthesis: 'none';
 }

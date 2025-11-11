@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Geist-MediumItalic';
+  src: local('Geist-MediumItalic'), url('../fonts/sans/static/Geist-MediumItalic.woff2') format('woff2');
+  font-weight: '500';
+  font-style: 'italic';
+  font-display: 'swap';
+  font-synthesis: 'none';
+}

@@ -1,7 +1,8 @@
 @font-face {
   font-family: 'GeistMono-Thin';
-  src: url('../fonts/mono/static/GeistMono-Thin.woff2') format('woff2');
+  src: local('GeistMono-Thin'), url('../fonts/mono/static/GeistMono-Thin.woff2') format('woff2');
   font-weight: '100';
-  font-diplay: 'swap';
+  font-style: 'normal';
+  font-display: 'swap';
   font-synthesis: 'none';
 }

@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Geist-ThinItalic';
+  src: local('Geist-ThinItalic'), url('../fonts/sans/static/Geist-ThinItalic.woff2') format('woff2');
+  font-weight: '100';
+  font-style: 'italic';
+  font-display: 'swap';
+  font-synthesis: 'none';
+}

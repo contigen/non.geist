@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Geist-ExtraBoldItalic';
+  src: local('Geist-ExtraBoldItalic'), url('../fonts/sans/static/Geist-ExtraBoldItalic.woff2') format('woff2');
+  font-weight: '800';
+  font-style: 'italic';
+  font-display: 'swap';
+  font-synthesis: 'none';
+}
