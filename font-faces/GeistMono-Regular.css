@@ -2,6 +2,7 @@
   font-family: 'GeistMono-Regular';
   src: url('../fonts/mono/static/GeistMono-Regular.woff2') format('woff2');
   font-weight: '400';
-  font-diplay: 'swap';
+  font-style: 'normal';
+  font-display: 'swap';
   font-synthesis: 'none';
 }

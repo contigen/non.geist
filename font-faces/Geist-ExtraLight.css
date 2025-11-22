@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Geist-ExtraLight';
+  src: url('../fonts/sans/static/Geist-ExtraLight.woff2') format('woff2');
+  font-weight: '200';
+  font-style: 'normal';
+  font-display: 'swap';
+  font-synthesis: 'none';
+}

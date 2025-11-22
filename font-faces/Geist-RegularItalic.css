@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Geist-RegularItalic';
+  src: url('../fonts/sans/static/Geist-RegularItalic.woff2') format('woff2');
+  font-weight: '400';
+  font-style: 'italic';
+  font-display: 'swap';
+  font-synthesis: 'none';
+}

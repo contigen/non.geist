@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'GeistMono-ThinItalic';
+  src: url('../fonts/mono/static/GeistMono-ThinItalic.woff2') format('woff2');
+  font-weight: '100';
+  font-style: 'italic';
+  font-display: 'swap';
+  font-synthesis: 'none';
+}

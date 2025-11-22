@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Geist-BlackItalic';
+  src: url('../fonts/sans/static/Geist-BlackItalic.woff2') format('woff2');
+  font-weight: '900';
+  font-style: 'italic';
+  font-display: 'swap';
+  font-synthesis: 'none';
+}

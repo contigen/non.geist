@@ -1,4 +1,4 @@
-import { findFontWeight } from './font-weight'
+import { findFontWeight, isFontItalic } from './font-weight'
 import { join, extname, basename } from 'path'
 import fs from 'fs/promises'
 
@@ -47,15 +47,22 @@ export async function dirContainsCSSFilesWithFontFace(dir: string) {
 function generateFontFaceRule(fontFileName: string, fontFilePath: string) {
   const fontName = fontFileName.replace(/\..*$/, '')
   const fontWeight = findFontWeight(fontName)
+  const fontStyle = isFontItalic(fontName) ? `'italic'` : `'normal'`
+  
+  // Replace backslashes with forward slashes for CSS URLs
+  const normalizedFontPath = fontFilePath.replace(/\\/g, '/')
+  
+  // The format for the @font-face block should be kept as is, do not change indentation or spacing
   return `@font-face {
-      font-family: '${fontName}';
-      src: local('${fontName}'), url('../${fontFilePath}') format('${extname(
-        fontFilePath
-      ).slice(1)}');
-      font-weight: '${fontWeight}';
-      font-diplay: 'swap';
-      font-synthesis: 'none';
-    }`
+  font-family: '${fontName}';
+  src: url('../${normalizedFontPath}') format('${extname(
+    fontFilePath
+  ).slice(1)}');
+  font-weight: '${fontWeight}';
+  font-style: ${fontStyle};
+  font-display: 'swap';
+  font-synthesis: 'none';
+}`
 }
 
 export async function processFiles(dir: string) {

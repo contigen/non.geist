@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'GeistMono-ExtraBold';
+  src: url('../fonts/mono/static/GeistMono-ExtraBold.woff2') format('woff2');
+  font-weight: '800';
+  font-style: 'normal';
+  font-display: 'swap';
+  font-synthesis: 'none';
+}

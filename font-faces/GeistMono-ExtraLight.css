@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'GeistMono-ExtraLight';
+  src: url('../fonts/mono/static/GeistMono-ExtraLight.woff2') format('woff2');
+  font-weight: '200';
+  font-style: 'normal';
+  font-display: 'swap';
+  font-synthesis: 'none';
+}
