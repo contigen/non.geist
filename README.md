@@ -2,7 +2,7 @@
 
 ![Word cloud forming the text 'non-geist' in ASCII with a blue gradient effect ](./images/1.png)
 
-A package to use Vercelʼs typefaces, [Geist](https://vercel.com/font)－ Sans & Mono (**v 1.4**), for non-Next.js projects.
+A package to use Vercelʼs typefaces, [Geist](https://vercel.com/font)－ Sans & Mono (**v 1.6**), for non-Next.js projects.
 
 ## The Why
 
@@ -26,6 +26,26 @@ pnpm i non.geist
 bun add non.geist
 ```
 
+# v2.0.0
+
+**Breaking change**: Renamed the font-family from Geist Variable → Geist-Variable.
+
+All CSS using the old name must be updated, e.g.:
+
+```diff
+- font-family: "Geist Variable";
++ font-family: "Geist-Variable";
+```
+
+```diff
+- font-family: "Geist Mono Variable";
++ font-family: "GeistMono-Variable";
+```
+
+<br/>
+
+**Italic typeface addition**: Geist 1.5.1 introduced standalone italic font files. See [PR](https://github.com/contigen/non.geist/pull/6), and _Usage_ below.
+
 ## Usage
 
 The default import provides **variable fonts**.
@@ -33,20 +53,22 @@ The default import provides **variable fonts**.
 In your entry .js(x) or .ts(x) file, you can import like so:
 
 ```js
-import 'non.geist'
+import 'non.geist' // OR
+import 'non.geist/italic'
 
 // For Geist Mono
-import 'non.geist/mono'
+import 'non.geist/mono' // OR
+import 'non.geist/mono-italic'
 ```
 
 then,
 
 ```css
 body {
-  font-family: 'Geist Variable';
+  font-family: 'Geist-Variable';
 
   /* For Geist Mono */
-  font-family: 'Geist Mono Variable';
+  font-family: 'GeistMono-Variable';
 }
 ```
 
@@ -56,18 +78,20 @@ or do it in CSS directly
 @import url('non.geist');
 
 body {
-  font-family: 'Geist Variable';
+  font-family: 'Geist-Variable';
 }
 /* For Geist Mono */
 
 @import url('non.geist/mono');
-font-family: 'Geist Mono Variable';
+font-family: 'GeistMono-Variable';
 ```
 
 Variable fonts all the way, but if you need Geist sans individual weights:
 
-```bash
+```js
 import 'non.geist/font-faces/Geist-Black.css'
+/* For Italic equivalent: *-Italic.css */
+import 'non.geist/font-faces/Geist-BlackItalic.css'
 import 'non.geist/font-faces/Geist-Bold.css'
 import 'non.geist/font-faces/Geist-Light.css'
 import 'non.geist/font-faces/Geist-Medium.css'
@@ -80,8 +104,10 @@ import 'non.geist/font-faces/Geist-UltraLight.css'
 
 For Geist Mono:
 
-```bash
+```js
 import 'non.geist/font-faces/GeistMono-Black.css'
+/* For Italic equivalent: *-Italic.css */
+import 'non.geist/font-faces/GeistMono-BlackItalic.css'
 import 'non.geist/font-faces/GeistMono-Bold.css'
 import 'non.geist/font-faces/GeistMono-Light.css'
 import 'non.geist/font-faces/GeistMono-Medium.css'
@@ -98,22 +124,33 @@ import 'non.geist/font-faces/Geist-MonoUltraLight.css'
 @import url('non.geist/font-faces/Geist-Bold.css');
 
 font-family: 'Geist-Bold';
+
 /* Geist Mono */
 @import url('non.geist/font-faces/GeistMono-Bold.css');
 
 font-family: 'GeistMono-Bold';
 ```
 
-## Miscellaneous
+<br/>
 
-Additional `@font-face` rules:
+**For italic font files**:
 
 ```css
-font-display: swap;
-font-synthesis: none;
+@import url('non.geist/font-faces/Geist-BoldItalic.css');
+
+font-family: 'Geist-BoldItalic';
+
+/* Geist Mono */
+@import url('non.geist/font-faces/GeistMono-BoldItalic.css');
+
+font-family: 'GeistMono-BoldItalic';
 ```
 
-To explore the typefaces stylistic sets, use CSS's `font-feature-settings` property.
+## Miscellaneous
+
+To explore the typefaces' stylistic sets, use CSS's `font-feature-settings` property.
+
+Try [wakamaifondue](https://wakamaifondue.com/) for typeface exploration.
 
 ## License
 
@@ -121,7 +158,7 @@ To explore the typefaces stylistic sets, use CSS's `font-feature-settings` prope
 
 ## Credits
 
-Thank you [Vercel](https://vercel.com/home)
+Thank you [Vercel](https://vercel.com/home) & contributors (via PRs & Issues)
 
 ---
 

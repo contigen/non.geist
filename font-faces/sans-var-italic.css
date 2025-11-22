@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Geist-VariableItalic';
+    src: url('../fonts/sans/Geist-Italic[wght].woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+    font-synthesis: none;
+}

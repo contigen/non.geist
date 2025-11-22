@@ -1,17 +1,8 @@
 @font-face {
-    font-family: 'Geist Mono Variable';
+    font-family: 'Geist-MonoVariable';
     src: url('../fonts/mono/GeistMono[wght].woff2') format('woff2');
     font-weight: 100 900;
     font-style: normal;
-    font-display: swap;
-    font-synthesis: none;
-}
-
-@font-face {
-    font-family: 'Geist Mono Variable';
-    src: url('../fonts/mono/GeistMono-Italic[wght].woff2') format('woff2');
-    font-weight: 100 900;
-    font-style: italic;
     font-display: swap;
     font-synthesis: none;
 }

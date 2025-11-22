@@ -1,7 +1,7 @@
 {
   "name": "non.geist",
   "author": "contigen",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/contigen/non.geist.git"
@@ -13,7 +13,9 @@
   ],
   "exports": {
     ".": "./font-faces/sans-var.css",
+    "./italic": "./font-faces/sans-var-italic.css",
     "./mono": "./font-faces/mono-var.css",
+    "./mono-italic": "./font-faces/mono-var-italic.css",
     "./font-faces/": "./font-faces/"
   },
   "scripts": {
@@ -28,11 +30,13 @@
   "description": "Vercel's Geist font for non-Next.js projects",
   "keywords": [
     "fonts",
+    "typefaces",
     "web fonts",
     "vercel",
     "Geist",
     "Geist Sans",
-    "Geist Mono"
+    "Geist Mono",
+    "variable fonts"
   ],
   "license": "MIT",
   "bugs": "https://github.com/contigen/non.geist/issues"
