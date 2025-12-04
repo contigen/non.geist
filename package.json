@@ -12,8 +12,10 @@
     "fonts"
   ],
   "exports": {
-    ".": "./font-faces/sans-var.css",
+    ".": "./font-faces/sans.css",
+    "./sans": "./font-faces/sans-var.css",
     "./italic": "./font-faces/sans-var-italic.css",
+    "./m": "./font-faces/mono.css",
     "./mono": "./font-faces/mono-var.css",
     "./mono-italic": "./font-faces/mono-var-italic.css",
     "./font-faces/": "./font-faces/"
