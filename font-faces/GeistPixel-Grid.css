@@ -1,8 +1,8 @@
 @font-face {
-    font-family: 'GeistPixel-Grid';
-    src: url('../fonts/pixel/GeistPixel-Grid.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-    font-synthesis: none;
+  font-family: 'GeistPixel-Grid';
+  src: url('../fonts/pixel/GeistPixel-Grid.woff2') format('woff2');
+  font-weight: '400';
+  font-style: 'normal';
+  font-display: 'swap';
+  font-synthesis: 'none';
 }

@@ -2,7 +2,7 @@
 
 ![Word cloud forming the text 'non-geist' in ASCII with a blue gradient effect ](./images/1.png)
 
-A package to use Vercelʼs typefaces, [Geist](https://vercel.com/font)－ Sans & Mono (**v 1.6**), for non-Next.js projects.
+A package to use Vercelʼs typefaces, [Geist](https://vercel.com/font)－ Sans, Mono & Pixel (**v 1.7.2**), for non-Next.js projects.
 
 ## The Why
 
