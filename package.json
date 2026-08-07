@@ -1,7 +1,7 @@
 {
   "name": "non.geist",
   "author": "contigen",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/contigen/non.geist.git"
@@ -16,6 +16,12 @@
     "./italic": "./font-faces/sans-var-italic.css",
     "./mono": "./font-faces/mono-var.css",
     "./mono-italic": "./font-faces/mono-var-italic.css",
+    "./pixel": "./font-faces/pixel-all.css",
+    "./pixel/circle": "./font-faces/GeistPixel-Circle.css",
+    "./pixel/grid": "./font-faces/GeistPixel-Grid.css",
+    "./pixel/line": "./font-faces/GeistPixel-Line.css",
+    "./pixel/square": "./font-faces/GeistPixel-Square.css",
+    "./pixel/triangle": "./font-faces/GeistPixel-Triangle.css",
     "./font-faces/": "./font-faces/"
   },
   "scripts": {
@@ -36,6 +42,9 @@
     "Geist",
     "Geist Sans",
     "Geist Mono",
+    "Geist Pixel",
+    "pixel fonts",
+    "display fonts",
     "variable fonts"
   ],
   "license": "MIT",
