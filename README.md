@@ -1,3 +1,5 @@
+<img width="1247" height="981" alt="image" src="https://github.com/user-attachments/assets/d9f572a9-a8d1-4fc8-9038-7617ea3a1cc4" />
+
 # [non.geist](https://www.npmjs.com/package/non.geist)
 
 ![Word cloud forming the text 'non-geist' in ASCII with a blue gradient effect ](./images/1.png)
