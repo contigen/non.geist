@@ -146,6 +146,54 @@ font-family: 'Geist-BoldItalic';
 font-family: 'GeistMono-BoldItalic';
 ```
 
+## Geist Pixel
+
+Geist Pixel is a display typeface family with five stylistic variants: **Circle, Grid, Line, Square, and Triangle**.
+
+Load all variants at once:
+
+```js
+import 'non.geist/pixel'
+```
+
+Or import individual variants:
+
+```js
+import 'non.geist/pixel/circle'
+import 'non.geist/pixel/grid'
+import 'non.geist/pixel/line'
+import 'non.geist/pixel/square'
+import 'non.geist/pixel/triangle'
+```
+
+`font-family` values:
+
+```css
+font-family: 'GeistPixel-Circle';
+font-family: 'GeistPixel-Grid';
+font-family: 'GeistPixel-Line';
+font-family: 'GeistPixel-Square';
+font-family: 'GeistPixel-Triangle';
+```
+
+Or via CSS `@import`:
+
+```css
+@import url('non.geist/pixel');
+
+h1 { font-family: 'GeistPixel-Square'; }
+```
+
+You can also import individual per-variant CSS files directly:
+
+```js
+import 'non.geist/font-faces/GeistPixel-Circle.css'
+import 'non.geist/font-faces/GeistPixel-Grid.css'
+import 'non.geist/font-faces/GeistPixel-Line.css'
+import 'non.geist/font-faces/GeistPixel-Square.css'
+import 'non.geist/font-faces/GeistPixel-Triangle.css'
+```
+
 ## Miscellaneous
 
 To explore the typefaces' stylistic sets, use CSS's `font-feature-settings` property.
