@@ -8,6 +8,12 @@ const fontWeights = {
   bold: 700,
   extrabold: 800,
   black: 900,
+  // GeistPixel display variants — not weight-based
+  circle: 400,
+  grid: 400,
+  line: 400,
+  square: 400,
+  triangle: 400,
 }
 
 export function findFontWeight(fontWeightName: string) {
@@ -20,7 +26,7 @@ export function findFontWeight(fontWeightName: string) {
   for (const [key, value] of Object.entries(fontWeights)) {
     if (key === fontWeightPart) return value
   }
-  return 700
+  return 400
 }
 
 export function isFontItalic(fontName: string) {
